@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resign.css">
+  <title>Resignation</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Resignation Form</h2>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col_half">
+            <label>Name</label>
+            <div class="input_field"> 
+              <input type="text" name="name" required />
+            </div>
+          </div>
+          <div class="col_half">
+            <label>Employee ID</label>
+            <div class="input_field"> 
+              <input type="text" name="eid" required/>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col_half">
+              <label>Department</label>
+              <div class="input_field"> 
+                <input type="text" name="dept" required />
+              </div>
+            </div>
+            <div class="col_half">
+              <label>Last Day Worked</label>
+              <div class="input_field"> 
+                <input type="date" name="lastdate" required/>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+        <div class="row">
+            <div class='form-input'>
+                <p>Reason for Resignation:</p>
+                <input type='radio' name='answer' id='radio-btn' value='new position' />Another Position / New Employer</br>
+                <input type='radio' name='answer' id='radio-btn' value='personal' />Personal Reasons </br>
+                <input type='radio' name='answer' id='radio-btn' value='retirement' />Retirement </br>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+          <div>
+            <label>Details:</label>
+            <div class="textarea_field">
+              <textarea cols="46" rows="3" name="reasons" required></textarea>
+            </div>
+          </div>
+        </div>
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="leave.css">
+  <title>Leave Application</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Leave Application Form</h2>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col_half">
+            <label>Name</label>
+            <div class="input_field"> 
+              <input type="text" name="name" placeholder="Enter your name" required />
+            </div>
+          </div>
+          <div class="col_half">
+            <label>Email</label>
+            <div class="input_field"> 
+              <input type="text" name="email" placeholder="email@example.com" required/>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+          <div class="col_half">
+            <label>First date of absence</label>
+            <div class="input_field"> 
+              <input type="date" name="firstdate" required />
+            </div>
+          </div>
+          <div class="col_half">
+            <label>Last date of absence</label>
+            <div class="input_field"> 
+              <input type="date" name="lastdate" required/>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+          <div>
+            <label>Reasons:</label>
+            <div class="textarea_field">
+              <textarea cols="46" rows="3" name="reasons" required></textarea>
+            </div>
+          </div>
+        </div>
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

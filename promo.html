@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="promo.css">
+  <title>Promotion</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Request for Promotion</h2>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col_half">
+            <label>Name</label>
+            <div class="input_field"> 
+              <input type="text" name="name" placeholder="" required />
+            </div>
+          </div>
+          <div class="col_half">
+            <label>Employee ID</label>
+            <div class="input_field"> 
+              <input type="text" name="dept" placeholder="" required/>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+          <div class="col_half">
+            <label>Department</label>
+            <div class="input_field"> 
+              <input type="text" name="hiredate" required />
+            </div>
+          </div>
+          <div class="col_half">
+            <label>Date of Hire:</label>
+            <div class="input_field"> 
+              <input type="date" name="hiredate" required/>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="col_half">
+              <label>Current Title:</label>
+              <div class="input_field"> 
+                <input type="text" name="old" required />
+              </div>
+            </div>
+            <div class="col_half">
+              <label>New Title:</label>
+              <div class="input_field"> 
+                <input type="text" name="new" required/>
+              </div>
+            </div>
+          </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class='form-input'>
+                <p>Has this employee met the requirements as outlined in the job qualification?</p>
+                <input type='radio' name='answer' id='radio-btn' value='yes' />Yes</br>
+                <input type='radio' name='answer' id='radio-btn' value='no' />No</br>
+            </div>
+        </div>
+        <div class="row">
+            <div class='form-input'>
+                <p>Has this employee been assigned higher level duties?</p>
+                <input type='radio' name='answer' id='radio-btn' value='yes' />Yes</br>
+                <input type='radio' name='answer' id='radio-btn' value='no' />No</br>
+            </div>
+        </div>
+        <div class="row">
+            <div class='form-input'>
+                <p>Has this employee consistently performed at a <strong>Satisfactory level</strong>?</p>
+                <input type='radio' name='answer' id='radio-btn' value='yes' />Yes</br>
+                <input type='radio' name='answer' id='radio-btn' value='no' />No</br>
+            </div>
+        </div>
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
