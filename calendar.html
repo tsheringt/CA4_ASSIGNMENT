@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
   <link rel="stylesheet" href="home.css">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="leave.css">
-  <title>Leave Application</title>
+  <link rel="stylesheet" href="calendar.css">
+  <title>Calendar</title>
 </head>
 <body>
   <div class="sidebar">
@@ -101,7 +102,7 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Leave Application Form</span>
+        <span class="dashboard">Calendar</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Search...">
@@ -109,60 +110,34 @@
       </div>
       <div class="profile-details">
         <img src="1.webp" alt="">
-        <i class='bx bx-chevron-down' ></i>
+        <span class="admin_name">Tashi</span>
       </div>
     </nav>
     <div class="home-content">
-  <div class="wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Leave Application Form</h2>
+  <div class="container">
+    <div class="calendar">
+      <div class="month">
+        <i class="fas fa-angle-left prev"></i>
+        <div class="date">
+          <h1></h1>
+          <p></p>
+        </div>
+        <i class="fas fa-angle-right next"></i>
       </div>
-      <form>
-        <div class="row">
-          <div class="col_half">
-            <label>Name</label>
-            <div class="input_field"> 
-              <input type="text" name="name" placeholder="Enter your name" required />
-            </div>
-          </div>
-          <div class="col_half">
-            <label>Email</label>
-            <div class="input_field"> 
-              <input type="text" name="email" placeholder="email@example.com" required/>
-            </div>
-          </div>
-        </div>
-        <br><br><br><br>
-        <div class="row">
-          <div class="col_half">
-            <label>First date of absence</label>
-            <div class="input_field"> 
-              <input type="date" name="firstdate" required />
-            </div>
-          </div>
-          <div class="col_half">
-            <label>Last date of absence</label>
-            <div class="input_field"> 
-              <input type="date" name="lastdate" required/>
-            </div>
-          </div>
-        </div>
-        <br><br><br><br>
-        <div class="row">
-          <div>
-            <label>Reasons:</label>
-            <div class="textarea_field">
-              <textarea cols="46" rows="3" name="reasons" required></textarea>
-            </div>
-          </div>
-        </div>
-        <input class="button" type="submit" value="Submit" />
-      </form>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days"></div>
     </div>
   </div>
 </div>
-</div>
-<script src="home.js"></script>
+  <script src="calendar.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="home.css">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="leave.css">
-  <title>Leave Application</title>
+  <link rel="stylesheet" href="help.css">
+  <title>Help</title>
 </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
       <i class='bx bxs-castle'></i>
-      <span class="logo_name">Hotel</span>
+      <span class="logo_name">Logo</span>
     </div>
       <ul class="nav-links">
         <li>
@@ -101,7 +101,7 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Leave Application Form</span>
+        <span class="dashboard">Help</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Search...">
@@ -109,14 +109,20 @@
       </div>
       <div class="profile-details">
         <img src="1.webp" alt="">
-        <i class='bx bx-chevron-down' ></i>
+        <span class="admin_name">Tashi</span>
       </div>
     </nav>
+
     <div class="home-content">
   <div class="wrapper">
     <div class="container">
       <div class="heading">
-        <h2>Leave Application Form</h2>
+        <h2>Contact Us</h2>
+        <br>
+        <p>We would love to hear from you - any comments or question you
+            may have. We will endevour to get back to you as soon as
+            possible.
+        </p>
       </div>
       <form>
         <div class="row">
@@ -136,28 +142,28 @@
         <br><br><br><br>
         <div class="row">
           <div class="col_half">
-            <label>First date of absence</label>
+            <label>Room Number</label>
             <div class="input_field"> 
-              <input type="date" name="firstdate" required />
+              <input type="number" name="number" required />
             </div>
           </div>
           <div class="col_half">
-            <label>Last date of absence</label>
+            <label>Telephone</label>
             <div class="input_field"> 
-              <input type="date" name="lastdate" required/>
+              <input type="number" name="phone" required/>
             </div>
           </div>
         </div>
         <br><br><br><br>
         <div class="row">
           <div>
-            <label>Reasons:</label>
+            <label>Message:</label>
             <div class="textarea_field">
               <textarea cols="46" rows="3" name="reasons" required></textarea>
             </div>
           </div>
         </div>
-        <input class="button" type="submit" value="Submit" />
+        <input class="button" type="submit" value="Contact us" />
       </form>
     </div>
   </div>

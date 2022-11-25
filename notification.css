@@ -173,132 +173,85 @@ nav .profile-details i{
   color: #333;
 }
 *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-transform: capitalize;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
+
 body{
-    background-color:  #ffffff;
+	background: #ececec;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-flow:row wrap;
+.wrap{
+	width: 500px;
+	margin: 120px auto 0;
 }
-#wrapper{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.wrap .icon{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	font-size: 32px;
+	margin: 0 auto;
+	text-align: center;
+	color: #424242;
 }
-#wrapper .container1{
-    width: 20%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border:1px solid rgb(223, 223, 223);   
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgb(209, 209, 209);
-    margin: 15px;
+
+.wrap .icon .fa-bell{
+	cursor: pointer;
 }
-#wrapper .container1:hover{
-    box-shadow: 20px 20px 30px rgb(160, 160, 160);
+
+.wrap .dropdown{
+	width: 350px;
+	height: auto;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.125);
+	margin: 15px auto 0;
+	padding: 15px;
+	position: relative;
+	display: none;
 }
-#wrapper .container1 img{
-    width: 100%;
-    border-radius:20px; 
+
+.wrap .dropdown .box{
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #dbdaff;
 }
-@media (max-width: 1240px) {
-    .sidebar{
-      width: 60px;
-    }
-    .sidebar.active{
-      width: 220px;
-    }
-    .home-section{
-      width: calc(100% - 60px);
-      left: 60px;
-    }
-    .sidebar.active ~ .home-section{
-      /* width: calc(100% - 220px); */
-      overflow: hidden;
-      left: 220px;
-    }
-    .home-section nav{
-      width: calc(100% - 60px);
-      left: 60px;
-    }
-    .sidebar.active ~ .home-section nav{
-      width: calc(100% - 220px);
-      left: 220px;
-    }
-  }
-  @media (max-width: 1150px) {
-    .home-content .sales-boxes{
-      flex-direction: column;
-    }
-    .home-content .sales-boxes .box{
-      width: 100%;
-      overflow-x: scroll;
-      margin-bottom: 30px;
-    }
-    .home-content .sales-boxes .top-sales{
-      margin: 0;
-    }
-  }
-  @media (max-width: 1000px) {
-    .overview-boxes .box{
-      width: calc(100% / 2 - 15px);
-      margin-bottom: 15px;
-    }
-  }
-  @media (max-width: 700px) {
-    nav .sidebar-button .dashboard,
-    nav .profile-details .admin_name,
-    nav .profile-details i{
-      display: none;
-    }
-    .home-section nav .profile-details{
-      height: 50px;
-      min-width: 40px;
-    }
-    .home-content .sales-boxes .sales-details{
-      width: 560px;
-    }
-  }
-  @media (max-width: 550px) {
-    .overview-boxes .box{
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    .sidebar.active ~ .home-section nav .profile-details{
-      display: none;
-    }
-  }
-    @media (max-width: 400px) {
-    .sidebar{
-      width: 0;
-    }
-    .sidebar.active{
-      width: 60px;
-    }
-    .home-section{
-      width: 100%;
-      left: 0;
-    }
-    .sidebar.active ~ .home-section{
-      left: 60px;
-      width: calc(100% - 60px);
-    }
-    .home-section nav{
-      width: 100%;
-      left: 0;
-    }
-    .sidebar.active ~ .home-section nav{
-      left: 60px;
-      width: calc(100% - 60px);
-    }
-  }
-  
+
+.wrap .dropdown .box:last-child{
+	border-bottom: 0px;
+}
+
+.wrap .dropdown .box .notify_img{
+	margin-right: 15px;
+}
+
+.wrap .dropdown .box .notify_info p{
+	margin-bottom: 5px;
+}
+
+.wrap .dropdown .box .notify_info p span{
+	color: #605dff;
+	margin-left: 5px;
+}
+
+.wrap .dropdown .notify_item .notify_info .notify_time{
+	color: #c5c5e6;
+	font-size: 12px;
+}
+
+.wrap .dropdown:before{
+	
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 15px solid;
+	border-color: transparent transparent #fff transparent;
+}
+
+.wrap .dropdown.active{
+	display: block;
+}

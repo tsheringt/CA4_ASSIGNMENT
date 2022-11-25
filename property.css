@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: #f5f5f5;
+}
 .sidebar{
   position: fixed;
   height: 100%;
@@ -172,133 +175,68 @@ nav .profile-details i{
   font-size: 25px;
   color: #333;
 }
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-body{
-    background-color:  #ffffff;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-flow:row wrap;
-}
-#wrapper{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#wrapper .container1{
-    width: 20%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border:1px solid rgb(223, 223, 223);   
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgb(209, 209, 209);
-    margin: 15px;
-}
-#wrapper .container1:hover{
-    box-shadow: 20px 20px 30px rgb(160, 160, 160);
-}
-#wrapper .container1 img{
-    width: 100%;
-    border-radius:20px; 
-}
-@media (max-width: 1240px) {
-    .sidebar{
-      width: 60px;
-    }
-    .sidebar.active{
-      width: 220px;
-    }
-    .home-section{
-      width: calc(100% - 60px);
-      left: 60px;
-    }
-    .sidebar.active ~ .home-section{
-      /* width: calc(100% - 220px); */
-      overflow: hidden;
-      left: 220px;
-    }
-    .home-section nav{
-      width: calc(100% - 60px);
-      left: 60px;
-    }
-    .sidebar.active ~ .home-section nav{
-      width: calc(100% - 220px);
-      left: 220px;
-    }
+.cards-list {
+	z-index: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 100px;
   }
-  @media (max-width: 1150px) {
-    .home-content .sales-boxes{
-      flex-direction: column;
-    }
-    .home-content .sales-boxes .box{
-      width: 100%;
-      overflow-x: scroll;
-      margin-bottom: 30px;
-    }
-    .home-content .sales-boxes .top-sales{
-      margin: 0;
-    }
+  
+  .card {
+	margin: 30px auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+	cursor: pointer;
+	transition: 0.4s;
   }
-  @media (max-width: 1000px) {
-    .overview-boxes .box{
-      width: calc(100% / 2 - 15px);
-      margin-bottom: 15px;
-    }
+  
+  .card .card_image {
+	width: inherit;
+	height: inherit;
+	border-radius: 40px;
   }
-  @media (max-width: 700px) {
-    nav .sidebar-button .dashboard,
-    nav .profile-details .admin_name,
-    nav .profile-details i{
-      display: none;
-    }
-    .home-section nav .profile-details{
-      height: 50px;
-      min-width: 40px;
-    }
-    .home-content .sales-boxes .sales-details{
-      width: 560px;
-    }
+  
+  .card .card_image img {
+	width: inherit;
+	height: inherit;
+	border-radius: 40px;
+	object-fit: cover;
   }
-  @media (max-width: 550px) {
-    .overview-boxes .box{
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    .sidebar.active ~ .home-section nav .profile-details{
-      display: none;
-    }
+  
+  .card .card_title {
+	text-align: center;
+	border-radius: 0px 0px 40px 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: -80px;
+	height: 40px;
   }
-    @media (max-width: 400px) {
-    .sidebar{
-      width: 0;
-    }
-    .sidebar.active{
-      width: 60px;
-    }
-    .home-section{
-      width: 100%;
-      left: 0;
-    }
-    .sidebar.active ~ .home-section{
-      left: 60px;
-      width: calc(100% - 60px);
-    }
-    .home-section nav{
-      width: 100%;
-      left: 0;
-    }
-    .sidebar.active ~ .home-section nav{
-      left: 60px;
-      width: calc(100% - 60px);
-    }
+  
+  .card:hover {
+	transform: scale(0.9, 0.9);
+	box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+	  -5px -5px 30px 15px rgba(0,0,0,0.22);
   }
+  
+  .title-white {
+	color: white;
+  }
+  
+  .title-black {
+	color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+	.card-list {
+	  /* On small screens, we are no longer using row direction but column */
+	  flex-direction: column;
+	}
+  }
+  
+  
   
